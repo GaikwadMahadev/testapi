@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+    <hr><br>
+    <h3>List Of Companies</h3>
+    {% for dt in data %}
+    <hr>
+            <h3>ID: {{dt.id}}</h3>
+            <h3>Company: {{dt.company}}</h3>
+            <h3>Description: {{dt.description}}</h3>
+    
+    {% endfor %}
+    
+
+</body>
+</html>
